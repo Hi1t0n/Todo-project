@@ -1,0 +1,15 @@
+C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Infrastructure\bin\Debug\net7.0\UserService.Infrastructure.deps.json
+C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Infrastructure\bin\Debug\net7.0\UserService.Infrastructure.dll
+C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Infrastructure\bin\Debug\net7.0\UserService.Infrastructure.pdb
+C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Infrastructure\bin\Debug\net7.0\UserService.Domain.dll
+C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Infrastructure\bin\Debug\net7.0\UserService.Domain.pdb
+C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Infrastructure\obj\Debug\net7.0\UserService.Infrastructure.csproj.AssemblyReference.cache
+C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Infrastructure\obj\Debug\net7.0\UserService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Infrastructure\obj\Debug\net7.0\UserService.Infrastructure.AssemblyInfoInputs.cache
+C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Infrastructure\obj\Debug\net7.0\UserService.Infrastructure.AssemblyInfo.cs
+C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Infrastructure\obj\Debug\net7.0\UserService.Infrastructure.csproj.CoreCompileInputs.cache
+C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Infrastructure\obj\Debug\net7.0\UserService.Infrastructure.csproj.CopyComplete
+C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Infrastructure\obj\Debug\net7.0\UserService.Infrastructure.dll
+C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Infrastructure\obj\Debug\net7.0\refint\UserService.Infrastructure.dll
+C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Infrastructure\obj\Debug\net7.0\UserService.Infrastructure.pdb
+C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Infrastructure\obj\Debug\net7.0\ref\UserService.Infrastructure.dll
