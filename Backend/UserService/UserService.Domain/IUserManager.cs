@@ -15,12 +15,6 @@ public interface IUserManager
     /// <returns>Данные пользователя</returns>
     User? GetUserById(long id);
 
-    /// <summary>
-    /// Поиск пользователя по логину
-    /// </summary>
-    /// <param name="login"></param>
-    /// <returns></returns>
-    User? FindUserByLogin(string login);
 
     /// <summary>
     /// Добавление пользователя
@@ -35,5 +29,12 @@ public interface IUserManager
     /// <param name="user">Данные пользователя</param>
     /// <returns></returns>
     User? UpdateUser(User user);
+
+    /// <summary>
+    /// Удаление пользователя
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
+    User? DeleteUser(long id);
 
 }
