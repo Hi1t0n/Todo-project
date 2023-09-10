@@ -16,7 +16,7 @@ public interface ITodoManager
     /// </summary>
     /// <param name="Login"></param>
     /// <returns></returns>
-    List<Todo> GetAllbyUserLogin(string Login);
+    List<Todo>? GetAllTodobyUserId(long Id);
 
     /// <summary>
     /// Обновление информации о задаче

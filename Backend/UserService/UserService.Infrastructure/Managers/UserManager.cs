@@ -11,7 +11,7 @@ namespace UserService.Infrastructure.Managers;
 
 public class UserManager : IUserManager
 {
-    private readonly UserContext _UserContext;
+    private UserContext _UserContext;
 
     public UserManager(UserContext context)
     {
