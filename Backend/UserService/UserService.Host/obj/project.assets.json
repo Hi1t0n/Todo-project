@@ -268,6 +268,20 @@
             "related": ".xml"
           }
         }
+      },
+      "UserService.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.10",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.4"
+        },
+        "compile": {
+          "bin/placeholder/UserService.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UserService.Domain.dll": {}
+        }
       }
     }
   },
@@ -664,12 +678,18 @@
         "npgsql.entityframeworkcore.postgresql.nuspec",
         "postgresql.png"
       ]
+    },
+    "UserService.Domain/1.0.0": {
+      "type": "project",
+      "path": "../UserService.Domain/UserService.Domain.csproj",
+      "msbuildProject": "../UserService.Domain/UserService.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.EntityFrameworkCore >= 7.0.10",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.4"
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.4",
+      "UserService.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -698,7 +718,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\CODE\\C#\\todo project ASP.NET\\Backend\\UserService\\UserService.Domain\\UserService.Domain.csproj": {
+              "projectPath": "C:\\CODE\\C#\\todo project ASP.NET\\Backend\\UserService\\UserService.Domain\\UserService.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

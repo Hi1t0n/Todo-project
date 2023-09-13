@@ -22,7 +22,7 @@ public class UserManager : IUserManager
     /// Получение всех пользователей
     /// </summary>
     /// <returns>Список всех пользователей</returns>
-    public List<User> GetAll()
+    public List<User> GetAllUsers()
     {
        return _UserContext.Users.ToList();
     }
@@ -59,20 +59,20 @@ public class UserManager : IUserManager
 
         if (existingUser is null) { return null; }
 
-        existingUser.Login = user.Login;
-        existingUser.Password = user.Password;
-        existingUser.Email = user.Email;
-        existingUser.EmailConfirmed = user.EmailConfirmed;
-        existingUser.PhoneConfirmed = user.PhoneConfirmed;
-        existingUser.NickName = user.NickName;
-        existingUser.PhoneNumber = user.PhoneNumber;
-        existingUser.TodoList = user.TodoList;
+        //existingUser.Login = user.Login;
+        //existingUser.Password = user.Password;
+        //existingUser.Email = user.Email;
+        //existingUser.EmailConfirmed = user.EmailConfirmed;
+        //existingUser.PhoneConfirmed = user.PhoneConfirmed;
+        //existingUser.NickName = user.NickName;
+        //existingUser.PhoneNumber = user.PhoneNumber;
+        //existingUser.TodoList = user.TodoList;
 
-        var UserData = _UserContext.Update(user);
+        _UserContext.Entry(existingUser).CurrentValues.SetValues(user);
 
         _UserContext.SaveChanges();
 
-        return UserData.Entity;
+        return existingUser;
     }
 
     public User? DeleteUser(long id)

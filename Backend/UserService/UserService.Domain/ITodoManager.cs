@@ -9,7 +9,7 @@ public interface ITodoManager
     /// </summary>
     /// <param name="Todo"></param>
     /// <returns></returns>
-    Todo AddTodo(Todo Todo); 
+    Todo AddTodoById(long Id,Todo todo); 
 
     /// <summary>
     /// Получение всех задач определенного пользователя

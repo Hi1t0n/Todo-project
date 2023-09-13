@@ -22,11 +22,11 @@ public class User
 
     public bool PhoneConfirmed { get; set; } = false;
 
-    public ICollection<Todo> TodoList { get; set; }
+    public ICollection<long> TodoList { get; set; }
 
     public User() 
     { 
-        TodoList = new List<Todo>();
+        TodoList = new List<long>();
     }
 
 }

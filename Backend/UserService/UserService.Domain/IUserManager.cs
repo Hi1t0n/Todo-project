@@ -6,7 +6,7 @@ public interface IUserManager
     /// Получить список всех пользователей
     /// </summary>
     /// <returns>Список пользователей</returns>
-    List<User> GetAll();
+    List<User> GetAllUsers();
 
     /// <summary>
     /// Получение пользователя по Id

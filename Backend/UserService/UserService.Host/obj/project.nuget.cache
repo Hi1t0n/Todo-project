@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3YIeK5VODyKZPUekAbEicMkPc5c1eXURVcvSKHpn6keKJmrIz2xEZsvgQZMe0R7sev0SOAl6gIPNEU4tW8mZaA==",
+  "dgSpecHash": "n2Ohgisd0t+l15MEHuaYephGgXWAdbYr4gf5wHHqCMTyGtwMKcLPw6pRCM+W/tVBEgZNtYuVafwGNkAPRHbJVA==",
   "success": true,
   "projectFilePath": "C:\\CODE\\C#\\todo project ASP.NET\\Backend\\UserService\\UserService.Host\\UserService.Host.csproj",
   "expectedPackageFiles": [
