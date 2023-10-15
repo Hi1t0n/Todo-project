@@ -7,7 +7,7 @@ public sealed class TodoContext : DbContext
 {
     public DbSet<Todo> Todos => Set<Todo>();
 
-    public TodoContext(DbContextOptions options) : base(options)
+    public TodoContext(DbContextOptions<TodoContext> options) : base(options)
     {
         Database.Migrate();
     }

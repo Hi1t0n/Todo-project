@@ -22,11 +22,6 @@ public class User
 
     public bool PhoneConfirmed { get; set; } = false;
 
-    public ICollection<long> TodoList { get; set; }
-
-    public User() 
-    { 
-        TodoList = new List<long>();
-    }
+   
 
 }

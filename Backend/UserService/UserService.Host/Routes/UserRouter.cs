@@ -1,4 +1,11 @@
 ﻿using UserService.Domain;
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.OAuth;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using UserService.Infrastructure.Helpers;
 
 namespace UserService.Host.Routes;
 
@@ -9,10 +16,11 @@ public static class UserRouter
         var userGroup = app.MapGroup("/api/users");
 
         userGroup.MapGet("/", GetAllUsers);
-        userGroup.MapGet("/{id:long}", GetUserById);
+        userGroup.MapGet("/{id:long}", [Authorize] ()=> GetUserById);
         userGroup.MapPost("/", CreateUser);
-        userGroup.MapPut("/", UpdateUser);
+        userGroup.MapPut("/" , [Authorize]()=> UpdateUser);
         userGroup.MapDelete("/{id:long}", DeleteUser);
+        
 
         return app;
     }
@@ -47,6 +55,7 @@ public static class UserRouter
         var user = userManager.DeleteUser(id);
         return user is null ? Results.NotFound() : Results.Ok(user);
     }
+
 
 
 }

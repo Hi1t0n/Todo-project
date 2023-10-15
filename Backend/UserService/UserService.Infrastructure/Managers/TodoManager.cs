@@ -20,18 +20,12 @@ public class TodoManager : ITodoManager
         
     }
 
-    public Todo AddTodoById(long id, Todo todo)
+    public Todo AddTodo(Todo todo)
     {
         var existingTodo = todo;
         if (existingTodo is null) { throw new Exception("Введены некорректные данные!");  }
-        var existingUser = _UserContext.Users.FirstOrDefault(x => x.Id == id);
-        if (existingUser is null) { throw new Exception("Такого пользователя не существует!"); }
-
-
         var TodoData = _TodoContext.Add(todo);
-        existingUser.TodoList.Add(todo.Id);
         _TodoContext.SaveChanges();
-        _UserContext.SaveChanges();
 
         return TodoData.Entity;
     }
@@ -66,6 +60,7 @@ public class TodoManager : ITodoManager
 
     public Todo? DeleteTodo(long Id)
     {
+
         var existingTodo = _TodoContext.Todos.FirstOrDefault(x => x.Id == Id);
         if (existingTodo is null) { return null; }
         

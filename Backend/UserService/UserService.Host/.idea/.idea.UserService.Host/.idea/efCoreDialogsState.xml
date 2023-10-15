@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EfCoreDialogsState">
+    <option name="keyValueStorage">
+      <map>
+        <entry key="Common:9bebcd29-c0c8-4428-9e76-ec11e2697f36:dbContext" value="UserService.Infrastructure.Contexts.UserContext" />
+        <entry key="Common:buildConfiguration" value="Debug" />
+        <entry key="Common:d42bf311-7d9e-4e34-86ef-24a7c95925da:dbContext" value="UserService.Infrastructure.Contexts.TodoContext" />
+        <entry key="Common:noBuild" value="false" />
+        <entry key="Common:outputFolder" value="Migrations" />
+        <entry key="Common:useDefaultConnection" value="true" />
+      </map>
+    </option>
+  </component>
+</project>

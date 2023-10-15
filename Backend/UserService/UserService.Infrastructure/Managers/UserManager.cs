@@ -1,6 +1,9 @@
-﻿using System;
+﻿using Microsoft.IdentityModel.Tokens;
+using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using UserService.Domain;
@@ -42,9 +45,12 @@ public class UserManager : IUserManager
     {
         var existingUser = _UserContext.Users.FirstOrDefault(x=>x.Login == user.Login);
 
-        if (existingUser is not null) { throw new Exception("Данный логин уже занят!"); }
+        if (existingUser != null) { throw new Exception("Данный логин уже занят!"); }
+        if (_UserContext.Users.FirstOrDefault(x=>x.Email == user.Email) != null) { throw new Exception("Данная почта уже занята"); }
+        if (_UserContext.Users.FirstOrDefault(x => x.PhoneNumber == user.PhoneNumber) != null) { throw new Exception("Данный номер уже используется"); }
 
         user.Password = HashPassword.PasswordHash(user.Password);
+        
 
         var UserData = _UserContext.Users.Add(user);
 
@@ -83,7 +89,6 @@ public class UserManager : IUserManager
         _UserContext.SaveChanges();
         return UserData.Entity;
     }
-
 
 }
 

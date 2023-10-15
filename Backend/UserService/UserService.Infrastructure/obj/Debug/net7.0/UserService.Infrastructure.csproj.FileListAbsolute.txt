@@ -13,3 +13,5 @@ C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Infrastructure\o
 C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Infrastructure\obj\Debug\net7.0\refint\UserService.Infrastructure.dll
 C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Infrastructure\obj\Debug\net7.0\UserService.Infrastructure.pdb
 C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Infrastructure\obj\Debug\net7.0\ref\UserService.Infrastructure.dll
+C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Infrastructure\bin\Debug\net7.0\UserService.Infrastructure.runtimeconfig.json
+C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Infrastructure\obj\Debug\net7.0\UserService.Infrastructure.genruntimeconfig.cache

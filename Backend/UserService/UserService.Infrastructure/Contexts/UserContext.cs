@@ -7,7 +7,7 @@ namespace UserService.Infrastructure.Contexts
     {
         public DbSet<User> Users => Set<User>();
 
-        public UserContext(DbContextOptions options) : base(options) 
+        public UserContext(DbContextOptions<UserContext> options) : base(options) 
         {
             Database.Migrate();
         }

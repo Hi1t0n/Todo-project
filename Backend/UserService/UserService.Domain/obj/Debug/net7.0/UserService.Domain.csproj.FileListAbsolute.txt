@@ -10,3 +10,5 @@ C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Domain\obj\Debug
 C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Domain\obj\Debug\net7.0\refint\UserService.Domain.dll
 C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Domain\obj\Debug\net7.0\UserService.Domain.pdb
 C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Domain\obj\Debug\net7.0\ref\UserService.Domain.dll
+C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Domain\bin\Debug\net7.0\UserService.Domain.runtimeconfig.json
+C:\CODE\C#\todo project ASP.NET\Backend\UserService\UserService.Domain\obj\Debug\net7.0\UserService.Domain.genruntimeconfig.cache

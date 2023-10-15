@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using UserService.Domain;
 using UserService.Infrastructure.Contexts;
 using UserService.Infrastructure.Managers;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace UserService.Infrastructure.Extensions;
 
@@ -21,7 +22,7 @@ public static class ServiceCollectionExtensions
     /// <param name="configuration"></param>
     /// <param name="connectionString"></param>
     /// <returns></returns>
-    private static IServiceCollection AddBusinessLogic(this IServiceCollection services,IConfiguration configuration,string connectionString)
+    public static IServiceCollection AddBusinessLogic(this IServiceCollection services,IConfiguration configuration,string connectionString)
     {
         services.AddManagers();
         services.AddDataBase(connectionString);
@@ -37,6 +38,7 @@ public static class ServiceCollectionExtensions
     {
         services.AddScoped<IUserManager,UserManager>();
         services.AddScoped<ITodoManager,TodoManager>();
+        services.AddScoped<IAuthManager,AuthManager>();
         return services;
     }
 
@@ -48,8 +50,17 @@ public static class ServiceCollectionExtensions
     /// <returns></returns>
     private static IServiceCollection AddDataBase(this IServiceCollection services,string connectionString)
     {
-        services.AddDbContext<UserContext>(builder => builder.UseNpgsql(connectionString));
+        services.AddDbContext<UserContext>(builder => builder.UseNpgsql(connectionString)); 
         services.AddDbContext<TodoContext>(builder => builder.UseNpgsql(connectionString));
         return services;
     }
+
+    
+    
+
+
+
+
+
+
 }

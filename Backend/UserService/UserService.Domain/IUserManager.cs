@@ -19,7 +19,7 @@ public interface IUserManager
     /// <summary>
     /// Добавление пользователя
     /// </summary>
-    /// <param name="user">Данные польователя</param>
+    /// <param name="user">Данные пользователя</param>
     /// <returns></returns>
     User CreateUser(User user);
 
@@ -36,5 +36,6 @@ public interface IUserManager
     /// <param name="id"></param>
     /// <returns></returns>
     User? DeleteUser(long id);
+
 
 }
