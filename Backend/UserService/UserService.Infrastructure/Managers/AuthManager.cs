@@ -34,11 +34,12 @@ namespace UserService.Infrastructure.Managers
         /// </summary>
         /// <param name="_login">логин пользователя</param>
         /// <param name="password">пароль пользователя</param>
-        /// <returns></returns>
+        /// <returns>response</returns>
         public object Login(string _login, string password)
         {
             if(_login.Length is 0 && password.Length is 0) { throw new Exception("Данные не могут быть пустыми"); }
-            User? user = _UserContext.Users.FirstOrDefault(x => x.Login == _login && x.Password == password);
+            User? user = _UserContext.Users
+                .FirstOrDefault(x => x.Login == _login && x.Password == password);
             if (user is null) { throw new Exception("Вы не зарегистрированны"); }
 
             var claims = new List<Claim> { new Claim(ClaimTypes.Name, user.Login) };

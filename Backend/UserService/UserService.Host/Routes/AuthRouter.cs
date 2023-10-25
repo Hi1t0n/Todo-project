@@ -15,10 +15,10 @@ namespace UserService.Host.Routes
             return app;
         }
 
-        private static Task<IActionResult> Login(string login,string password,AuthManager authManager)
+        private static IResult Login(string login, string password, AuthManager authManager)
         {
             var response = authManager.Login(login, password);
-            return response is null ? Task.FromResult<IActionResult>(new UnauthorizedResult()) : Task.FromResult<IActionResult> (new JsonResult(response)); 
+            return response is null ? Results.Unauthorized() : Results.Json(response);
         }
     }
 }

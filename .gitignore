@@ -5,3 +5,4 @@
 \UserService\UserService.Host\obj
 \UserService\UserService.Infrastructure\bin
 \UserService\UserService.Infrastructure\obj
+frontend/node_modules/
