@@ -20,6 +20,7 @@ export const LoginForm = () => {
                 <div>
                     <input
                         className='password-input'
+                        type='password'
                         placeholder={"Пароль"}
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
@@ -27,8 +28,9 @@ export const LoginForm = () => {
                 </div>
 
                 <div>
-                    <button>Войти</button>
+                    <button>Войти</button> <button>Еще не зарегистрированны?</button>
                 </div>
+
             </div>
         </div>
     );
